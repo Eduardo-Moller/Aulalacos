@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+        let altura=prompt("Digite a sua altura")
+        let peso=prompt("Digite o seu peso")
+        imc= peso/(altura*altura)
+        imc= (imc).toFixed (2)
+        alert("Seu IMC é de "+imc)
+
+    if (imc<18.5){
+            alert("MAGREZA")
+        }else if (imc>=18.5 && imc<24.9){
+            alert("NORMAL")
+        }else if(imc>=25 && imc<29.9){
+            alert("SOBREPESO")
+        }else if(imc>=30 && imc<39.9){
+            alert("OBESIDADE")
+        }else if(imc>40){
+            alert("OBESIDADE GRAVE")
+        }
+        }while(confirm("Deseja realizar outro teste de IMC?"))
+    </script>
+</body>
+</html>
